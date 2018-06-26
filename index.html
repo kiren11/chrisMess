@@ -1,14 +1,3 @@
-
-### Super Mega Bonus Credit
-
-* Add a form to the page.
-* Add a text input to the form.
-* When the form is submitted, update the heading with the text that you type in the text input.
-
-### Super Mega Bonus Credit Hyper Fighting
-
-* Make sure it works when you press _enter_ on the keyboard, not just when you click the button. --> 
-
 <!DOCTYPE html>
 
 <html>
@@ -24,18 +13,24 @@
 
     <body>
 
+        <!-- border design around form -->
         <div id = #borderBox>
-            <!-- first heading -->
-            <h1 id = "fTitle">Chrismess</h1>
+                 <!-- first heading -->
+                <h1 id = "fTitle"> Chrismess </h1> <br> <br>
+            <form>
+               
 
-            <!-- second heading -->
-            <h1 id = "sTitle"> Another Chrismess </h1>
+                <!-- user enters text here to change heading -->
+                <input type = "text" id = "inputC" name = "changeHeadingTo" > <br> <br> <br> <br>
 
-            <!-- button to change first heading -->
-            <button id = "changeHeading"> Button </button>
+                <!-- button to change first heading -->
+                <button id = "button1" > Button </button>
+
+             </form>
         </div>
 
         <!-- link to js file -->
-        <script src="index.js"></script>   
+        <script src="index.js"></script>  
+
     </body>
 </html>
