@@ -5,13 +5,11 @@ const button = document.querySelector('button');
 
 //create function to update header text when button is clicked
 const updateText = function(e) {
-
+  //prevents the page from refreshing
   e.preventDefault();
 
-  //get input
+  //get input + heading
   const input = document.querySelector('#inputC');
-
-  //get heading
   const heading = document.getElementById('fTitle');
 
   //change the second heading to this text
@@ -22,6 +20,7 @@ const updateText = function(e) {
 document.querySelector("#inputC").addEventListener("keyup", function(event) {
 
     event.preventDefault();
+    
     if(event.keyCode === "13") {
         button.click();
     }   
