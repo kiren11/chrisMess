@@ -54,12 +54,18 @@ input {
     font-size: 28px;
     float: right;
     padding-right: 600px;
+
 }
 
 ul li {
     background: #a82353 ;
     margin: 5px;
     list-style-type: none;
+}
+
+#input2 {
+    background: #FFE98A;
+    width: 100px;
 }
 
 
