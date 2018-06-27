@@ -17,6 +17,14 @@ const appendToList = function(ev) {
   const fList = document.querySelector('#movieNames')
   fList.appendChild(firstField)
 
+}
+
+const appendToList2 = function(ev) {
+    ev.preventDefault()
+  
+    //target is form
+    const f = ev.target
+
   //add second value to list
   const yearName = f.yearName.value
 
@@ -31,3 +39,4 @@ const appendToList = function(ev) {
 
 //add the second field to the list
 form.addEventListener('submit', appendToList)
+form.addEventListener('submit', appendToList2)
