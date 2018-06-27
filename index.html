@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Chrismess - A Whole Mess of Chrises</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chrismess - A whole mess o' Chrisses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+  <h1>Chrismess</h1>
 
-        <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
-    </head>
+  <form id="flickForm">
 
-    <body>
+    <input id = "input1" type="text" name="flickName" placeholder="Enter a flick" autofocus>
 
-        <!-- border design around form -->
-        <div id = "borderBox">
+    <input id = "input2" type="text" name="yearName" placeholder="Enter the year" autofocus>
 
-            <!-- first heading -->
-            <h1 id = "fTitle"> Chrismess </h1> <br> 
+    <button type="submit">Update Heading</button>
+  </form>
 
-            <form>
-                
-                <h2> Enter a word you want to replace the heading with: </h2> <br>
+  <ul id="flicks"></ul>
 
-                <!-- user enters text here to change heading -->
-                <input type = "text" id = "inputC" name = "changeHeadingTo" autofocus> <br> <br> <br> <br>
-
-                <!-- button to change first heading -->
-                <button id = "button1" > Submit </button>
-
-            </form>
-        </div>      
-    </body>
- </html>
- 
+  <script src="index.js"></script>
+</body>
+</html>

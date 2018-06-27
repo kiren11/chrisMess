@@ -1,30 +1,31 @@
-// js file for chrismess
+//select the form
+const form = document.querySelector('form#flickForm')
 
-//select button element
-const button = document.querySelector('button');
+//add first field to the list
+const appendToList = function(ev) {
+  ev.preventDefault()
 
-//create function to update header text when button is clicked
-const updateText = function(e) {
-  //prevents the page from refreshing
-  e.preventDefault();
+  //target is form
+  const f = ev.target
 
-  //get input + heading
-  const input = document.querySelector('#inputC');
-  const heading = document.getElementById('fTitle');
+  //name of movie is the first field
+  const flickName = f.flickName.value
 
-  //change the second heading to this text
-  heading.textContent = input.value;
+  const yearName = f.yearName.value
+
+  //append movie name to list
+  const firstField = document.createElement('li')
+  firstField.textContent = flickName
+  const fList = document.querySelector('#flicks')
+  fList.appendChild(firstField)
+
+  const secField = document.createElement('li')
+  secField.textContent = yearName
+  const sList = document.querySelector('#flicks')
+  sList.appendChild(secField)
+
+  f.reset()
 }
 
-//submit form if 'enter' button is pressed
-document.querySelector("#inputC").addEventListener("keyup", function(event) {
-
-    event.preventDefault();
-    
-    if(event.keyCode === "13") {
-        button.click();
-    }   
-
-});
-
-button.addEventListener('click', updateText);
+//add the second field to the list
+form.addEventListener('submit', appendToList)
