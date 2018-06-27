@@ -1,33 +1,20 @@
-<<<<<<< HEAD
 /* css file for chrismess */
-
 body {
-    background-color: #1a1a1d;
+    background: linear-gradient(325deg, #D74177, #FFE98A);
 }
 
-#borderBox {
-    border: 7px solid #950740;
-    height: 600px;
-    width: 600px;
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
+html {
+    height: 100%;
+ }
+
 
 h1 {
-  font-family: 'Racing Sans One', cursive;
+  font-family: 'Bungee Shade', cursive;
   font-size: 70px;
   text-align: center;
-  color: #C3073F;
+  color: white;
 }
 
-h2 {
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
-    text-align: center;
-    color: #950740;  
-}
 
 button {
     text-decoration: none;
@@ -40,7 +27,6 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 input {
@@ -52,58 +38,28 @@ input {
     background-color: #dbdcdd;
 }
 
-=======
-/* css file for chrismess */
-
-body {
-    background-color: #1a1a1d;
-}
-
-#borderBox {
-    border: 7px solid #950740;
-    height: 600px;
-    width: 600px;
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h1 {
-  font-family: 'Racing Sans One', cursive;
-  font-size: 70px;
-  text-align: center;
-  color: #C3073F;
-}
-
-h2 {
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
-    text-align: center;
-    color: #950740;  
-}
-
-button {
-    text-decoration: none;
-    border: none;
+#movieNames {
     color: white;
-    font-size: 20px;
     font-family: Helvetica, Arial, sans-serif;
-    padding: 5px 10px 5px 10px;
-    background-color: #950740;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    font-size: 28px;
+    display: inline;
+    padding-left: 500px;
+    float: left;
+    overflow: hidden;
 }
 
-input {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 230px;
-    height: 25px;
-    background-color: #dbdcdd;
+#yearName {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    float: right;
+    padding-right: 600px;
 }
 
->>>>>>> 2fedf75a0dc6d640abc33fc14c4e3c4604750612
+ul li {
+    background: #a82353 ;
+    margin: 5px;
+    list-style-type: none;
+}
+
+

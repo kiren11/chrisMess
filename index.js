@@ -11,17 +11,19 @@ const appendToList = function(ev) {
   //name of movie is the first field
   const flickName = f.flickName.value
 
-  const yearName = f.yearName.value
-
   //append movie name to list
   const firstField = document.createElement('li')
   firstField.textContent = flickName
-  const fList = document.querySelector('#flicks')
+  const fList = document.querySelector('#movieNames')
   fList.appendChild(firstField)
+
+  //add second value to list
+  const yearName = f.yearName.value
+
 
   const secField = document.createElement('li')
   secField.textContent = yearName
-  const sList = document.querySelector('#flicks')
+  const sList = document.querySelector('#yearName')
   sList.appendChild(secField)
 
   f.reset()
