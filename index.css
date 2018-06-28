@@ -1,71 +1,138 @@
 /* css file for chrismess */
 body {
-    background: linear-gradient(325deg, #D74177, #FFE98A);
+    background-color: #3AAFA9
 }
 
 html {
     height: 100%;
- }
-
-
-h1 {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 70px;
-  text-align: center;
-  color: white;
 }
 
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 70px;
+    text-align: left;
+    padding-left: 100px;
+    margin-top: 20px;
+    color:#FeFFFF;
+}
+
+h2 {
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-left: 240px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px 5px 10px;
+    background-color: #2B7A78;
+}
 
 button {
     text-decoration: none;
     border: none;
     color: white;
     font-size: 20px;
-    font-family: Helvetica, Arial, sans-serif;
-    padding: 5px 10px 5px 10px;
-    background-color: #950740;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    margin-left: 300px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px 5px 10px;
+    background-color: #17252A;
+}
+
+#buttons {
+    margin-left: 275px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input {
     display: block;
     margin-left: auto;
     margin-right: auto; 
+    margin-left: 250px;
     width: 230px;
     height: 25px;
-    background-color: #dbdcdd;
-}
-
-#movieNames {
-    color: white;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    display: inline;
-    padding-left: 500px;
-    float: left;
-    overflow: hidden;
-}
-
-#yearName {
-    color: white;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    float: right;
-    padding-right: 600px;
-
+    background-color: #DEF2F1 ;
 }
 
 ul li {
-    background: #a82353 ;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
     margin: 5px;
     list-style-type: none;
 }
 
-#input2 {
-    background: #FFE98A;
-    width: 100px;
+
+#movieHeader {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    float: right;
+    top: 50px;
+    left: 50%;
+    position: absolute;
 }
 
+#flicks {
+    background-color: #17252A;
+    position: absolute;
+    width: 300px;
+    height: 510px;
+    float: right;
+    color: white;
+    top: 100px;
+    left: 50%;
+}
 
+#delete {
+    position: absolute;
+    top: 650px;
+    left: 39%;
+}
+
+#heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+    }
+    #heart:before,
+    #heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: red;
+        -moz-border-radius: 50px 50px 0 0;
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+           -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+             -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+           -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+             -o-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+    }
+    #heart:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+             -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+           -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+             -o-transform-origin: 100% 100%;
+                transform-origin :100% 100%;
+    }
+
+}
